@@ -42,4 +42,4 @@ jobs:
           push: true
           tags:
               ${{ env.FULL_IMAGE_NAME }}
-              ${{IMAGE_NAME_WITH_REGISTRY}}:${{ github.sha }}
+              ${{ env.IMAGE_NAME_WITH_REGISTRY }}:${{ github.sha }}
