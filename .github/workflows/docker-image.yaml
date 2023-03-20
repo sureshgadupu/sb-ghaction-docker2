@@ -40,6 +40,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags:
+          tags: |
               ${{ env.FULL_IMAGE_NAME }}
               ${{ env.IMAGE_NAME_WITH_REGISTRY }}:${{ github.sha }}
